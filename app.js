@@ -25,7 +25,7 @@ for(const [key,group] of Object.entries(photographs)){
   const image=document.createElement('img');image.src=`assets/${key}-${index+1}-small.webp`;image.srcset=`assets/${key}-${index+1}-small.webp 600w, assets/${key}-${index+1}.webp ${Math.min(w,1200)}w`;image.sizes='(max-width: 700px) 400px, 520px';image.alt=`SablieR ${caption}`;image.width=w;image.height=h;image.loading='lazy';image.decoding='async';
   const zoom=document.createElement('span');zoom.className='photo-zoom';zoom.textContent='+';zoom.setAttribute('aria-hidden','true');
   button.append(image,zoom);
-  const figcaption=document.createElement('figcaption');const number=document.createElement('span');number.textContent=String(index+1).padStart(2,'0');const name=document.createElement('span');name.textContent=caption;figcaption.append(number,name);
+  const figcaption=document.createElement('figcaption');const number=document.createElement('span');number.textContent=String(index+1).padStart(2,'0');figcaption.append(number);
   figure.append(button,figcaption);rail.append(figure);
   button.addEventListener('click',()=>{selectedGroup=key;selectedIndex=index;opener=button;showPhoto();modal.showModal();document.body.classList.add('is-locked');modal.querySelector('.lightbox-close').focus()});
  });

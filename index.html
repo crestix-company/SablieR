@@ -39,7 +39,27 @@
       <p class="photo-note"><span>SablieR</span><span>飯田・育良町</span></p>
     </div>
     <div class="hero-intro">
-      <h1 id="hero-title" class="brand-art"><img src="assets/brand-original.jpg" width="2043" height="1380" alt="髪とお菓子と古道具 SablieR"></h1>
+      <h1 id="hero-title" class="brand-art">
+        <svg viewBox="666 444 690 440" role="img" aria-label="髪とお菓子と古道具 SablieR">
+          <defs>
+            <!-- Match the page color directly, without background blending. -->
+            <filter id="brand-paper" color-interpolation-filters="sRGB">
+              <feColorMatrix type="saturate" values="0"/>
+              <feComponentTransfer>
+                <feFuncR type="linear" slope="3.2" intercept="-.5"/>
+                <feFuncG type="linear" slope="3.2" intercept="-.5"/>
+                <feFuncB type="linear" slope="3.2" intercept="-.5"/>
+              </feComponentTransfer>
+              <feComponentTransfer>
+                <feFuncR type="linear" slope="0.980392157"/>
+                <feFuncG type="linear" slope="0.976470588"/>
+                <feFuncB type="linear" slope="0.964705882"/>
+              </feComponentTransfer>
+            </filter>
+          </defs>
+          <image href="assets/brand-original.jpg" width="2043" height="1380" filter="url(#brand-paper)"/>
+        </svg>
+      </h1>
       <p class="hero-copy">気がつけばまた歩み出すのが<br>楽しみになる…</p>
       <a class="explore" href="#about"><span>SablieRについて</span><span class="down-arrow" aria-hidden="true">↓</span></a>
     </div>
@@ -81,7 +101,7 @@
   <section class="department" id="objects" aria-labelledby="objects-title">
     <div class="department-intro wrap">
       <div class="department-title"><span class="chapter-number">03</span><div><h2 id="objects-title">古道具</h2><p>OLD THINGS</p></div></div>
-      <p class="department-copy">眺める度、使う度に<br>嬉しくなるような、<br>たったひとつしかない<br>味わい深い『あなたのお気に入り』に<br>出会えるお力になれれば<br>幸いです。</p>
+      <p class="department-copy">眺める度、使う度に<br>嬉しくなるような、<br>たったひとつしかない<br>味わい深いitem<br>あなたの『お気に入り』に<br>出会えるお力になれれば<br>幸いです。</p>
       <span class="department-aside" aria-hidden="true">時を重ねた、お気に入り。</span>
     </div>
     <div class="gallery-wrap"><div class="gallery" id="objects-gallery" tabindex="0" aria-label="古道具の写真。横にスクロールできます"></div></div>
@@ -93,10 +113,9 @@
     <div class="access-details">
       <dl>
         <div><dt>所在地</dt><dd>〒395-0152<br>長野県飯田市育良町2丁目21-1<br><a class="text-link map-link" href="https://www.google.com/maps/search/?api=1&amp;query=SablieR%20長野県飯田市育良町2丁目21-1" target="_blank" rel="noopener noreferrer">Google Mapsで見る<span aria-hidden="true">↗</span></a></dd></div>
-        <div><dt>アクセス</dt><dd>切石駅から1,015m</dd></div>
         <div><dt>お電話</dt><dd><a class="phone-link" href="tel:0265223888">0265-22-3888</a></dd></div>
         <div><dt>営業のご案内</dt><dd>不定休<br><span class="subtle">営業時間はお電話にてお問い合わせください。</span></dd></div>
-        <div><dt>公式LINE</dt><dd><a class="line-button" href="https://line.me/R/ti/p/@xat.0000174264.q67" target="_blank" rel="noopener noreferrer">公式LINEを開く<span aria-hidden="true">↗</span></a><span class="line-note">友だち追加はこちらから</span></dd></div>
+        <div><dt>公式LINE</dt><dd><a class="line-button" href="https://line.me/R/ti/p/@xat.0000174264.q67" target="_blank" rel="noopener noreferrer">公式LINEを開く<span aria-hidden="true">↗</span></a><span class="line-note">お問い合わせ・ご予約はコチラから</span></dd></div>
         <div><dt>Instagram</dt><dd><a class="text-link" href="https://www.instagram.com/sablier_bake/" target="_blank" rel="noopener noreferrer">@sablier_bake <span aria-hidden="true">↗</span></a></dd></div>
       </dl>
     </div>
@@ -106,7 +125,7 @@
 <dialog class="lightbox" aria-labelledby="lightbox-caption">
   <div class="lightbox-top"><span class="lightbox-category"></span><button class="lightbox-close" type="button" aria-label="写真の拡大表示を閉じる"><span>CLOSE</span> ×</button></div>
   <div class="lightbox-image-wrap"><img class="lightbox-image" src="assets/hair-1.webp" alt="" width="1477" height="1108"></div>
-  <div class="lightbox-bottom"><p id="lightbox-caption"></p><div class="lightbox-pagination"><button type="button" class="lightbox-prev" aria-label="前の写真">←</button><span class="lightbox-position" aria-live="polite"></span><button type="button" class="lightbox-next" aria-label="次の写真">→</button></div></div>
+  <div class="lightbox-bottom"><p id="lightbox-caption" class="visually-hidden"></p><div class="lightbox-pagination"><button type="button" class="lightbox-prev" aria-label="前の写真">←</button><span class="lightbox-position" aria-live="polite"></span><button type="button" class="lightbox-next" aria-label="次の写真">→</button></div></div>
 </dialog>
 <noscript><style>.gallery-wrap,.gallery-footer{display:none}</style><p class="no-script wrap">写真一覧をご覧いただくには、ブラウザのJavaScriptを有効にしてください。</p></noscript>
 </body>
