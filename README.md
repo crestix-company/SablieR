@@ -1,10 +1,10 @@
 # SablieR
 
-髪とお菓子と古道具、SablieRのサンプルサイト。
+髪とお菓子と古道具、SablieRのWebサイト。
 
 ## 閲覧
 
-https://crestix-company.github.io/SablieR/
+https://sablier.info/
 
 ## 構成
 
@@ -19,9 +19,9 @@ HTML・CSS・JavaScriptの静的サイトです。ビルドやパッケージの
 
 GitHub Pagesの公開元は `main` ブランチのルート `/` です。
 `.nojekyll` により静的ファイルをそのまま配信します。
-画像・CSS・JavaScriptの参照は相対パスで、`/SablieR/` 配下で動作します。
-サンプルとして検索結果への掲載を避けるため `noindex, nofollow` を指定しています。
-本公開時はこの指定と `og:url` / `og:image` を確認してください。
+独自ドメインは `sablier.info` です。ルートの `CNAME` ファイルを保持してください。
+画像・CSS・JavaScriptの参照は相対パスで、独自ドメインのルートで動作します。
+検索エンジンによる登録を許可し、canonical と `og:url` / `og:image` は独自ドメインを指定しています。
 
 ## 編集時の注意
 
